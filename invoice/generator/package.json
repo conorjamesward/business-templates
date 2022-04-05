@@ -1,11 +1,14 @@
 {
-  "name": "megan-cleaning",
+  "name": "generator",
   "version": "1.0.0",
-  "description": "Invoice generator for megan",
+  "description": "make html into pdf",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "conor ward",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "html-pdf": "^3.0.1"
+  }
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Entryway Cleaning Invoice</title>
+</head>
+<body>
+  <div class="today"></div>
+  <div class="due"></div>
+  <script>
+    const today = new Date();
+    const todaySring = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    document.querySelector('.today').innerHTML = todaySring;
+
+    const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()+1, 0).getDate()
+    const dueString = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + lastDayOfMonth;
+    document.querySelector('.due').innerHTML = dueString;
+    
+  </script>
+</body>
+</html>
