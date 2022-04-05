@@ -1,0 +1,11 @@
+{
+  "name": "megan-cleaning",
+  "version": "1.0.0",
+  "description": "Invoice generator for megan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "conor ward",
+  "license": "ISC"
+}
